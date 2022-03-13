@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DYNAMIC-PAGE</title>
+</head>
+<body>
+</body>
+<script>
+    var maincontent = (location.hash).substr(1);
+    if(maincontent){
+        document.body.innerHTML = maincontent;
+    }
+    else
+    {
+        document.body.innerHTML = "<h1>Dynamic-page</h1>コンテンツが指定されませんでした。<br><a href='index.html'>ホームに戻る</a>";
+    }
+</script>
+</html>
